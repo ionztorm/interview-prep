@@ -1,5 +1,8 @@
 # Classes
 
+- [Follow on Bluesky](https://bsky.app/profile/leonlonsdale.dev)
+- [Join Discord](https://discord.gg/dhrdFh98UA)
+
 ## What is a class
 
 A class is a blueprint for creating objects. It defines the properties and methods that an object will have.
