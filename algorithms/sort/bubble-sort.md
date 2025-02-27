@@ -1,7 +1,7 @@
-# Bubble Sort
-
 - [Follow on Bluesky](https://bsky.app/profile/leonlonsdale.dev)
 - [Join Discord](https://discord.gg/dhrdFh98UA)
+
+# Bubble Sort
 
 ## How it works
 

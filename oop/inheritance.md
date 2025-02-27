@@ -1,7 +1,7 @@
-# Inheritance
-
 - [Follow on Bluesky](https://bsky.app/profile/leonlonsdale.dev)
 - [Join Discord](https://discord.gg/dhrdFh98UA)
+
+# Inheritance
 
 - Classes can inherit the attributes and methods of other classes.
 - This is useful because it allows us to create a new class that is a modified version of an existing class.

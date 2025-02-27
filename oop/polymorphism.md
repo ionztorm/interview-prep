@@ -1,7 +1,7 @@
-# Polymorphism
-
 - [Follow on Bluesky](https://bsky.app/profile/leonlonsdale.dev)
 - [Join Discord](https://discord.gg/dhrdFh98UA)
+
+# Polymorphism
 
 - Polymorphism is the ability of a variable, function, or object to take on multiple forms.
 - In OOP, it is the ability for classes in the same hierarchy to have different implementations of the same method (the method has the same name).

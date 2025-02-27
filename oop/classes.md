@@ -1,7 +1,7 @@
-# Classes
-
 - [Follow on Bluesky](https://bsky.app/profile/leonlonsdale.dev)
 - [Join Discord](https://discord.gg/dhrdFh98UA)
+
+# Classes
 
 ## What is a class
 
