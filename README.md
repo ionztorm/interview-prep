@@ -4,11 +4,18 @@ I like to write notes, what can I say?
 
 This repo will contain the notes that I wrie for my interview prep.
 
+Help out or follow some other projects:
+
+- [Follow on Bluesky](https://bsky.app/profile/leonlonsdale.dev)
+- [Join Discord](https://discord.gg/dhrdFh98UA)
+
 ## Coding Basics
 
 ## OOP
 
 - [Classes](./oop/classes.md)
+- [Polymorphism](./oop/polymorphism.md)
+- [Inheritance](./oop/inheritance.md)
 
 ## Algorthms
 
