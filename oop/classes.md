@@ -77,7 +77,7 @@ class Person
 
 ### Private Variables
 
-In Python, variables can be made private by prefixing them with two underscores (`__`). This makes them inaccessible from outside the class.
+In Python, variables can be made private by prefixing them with two underscores (`_`). This does not make them inaccessible from outside the class unfortunitely, but it is convention, and indicates to other developers that they should not use it.
 
 ```python
 class Person:
