@@ -84,11 +84,11 @@ class Person:
     species = "human" # class variable
 
     def __init__(self, first_name, last_name):
-        self.__first_name = first_name # private instance variable
-        self.__last_name = last_name # private instance variable
+        self._first_name = first_name # private instance variable
+        self._last_name = last_name # private instance variable
 
     def full_name(self):
-        return f"{self.__first_name} {self.__last_name}"
+        return f"{self._first_name} {self._last_name}"
 ```
 
 ## Creating an instance of a class
