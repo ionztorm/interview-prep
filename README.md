@@ -24,3 +24,4 @@ Help out or follow some other projects:
 - [Bubble Sort](./algorithms/sort/bubble-sort.md)
 - [Insertion Sort](./algorithms/sort/insertion-sort.md)
 - [Merge Sort](./algorithms/sort/merge-sort.md)
+- [Quick Sort](./algorithms/sort/quick-sort.md)
