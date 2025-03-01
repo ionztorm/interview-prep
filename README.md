@@ -25,3 +25,6 @@ Help out or follow some other projects:
 - [Insertion Sort](./algorithms/sort/insertion-sort.md)
 - [Merge Sort](./algorithms/sort/merge-sort.md)
 - [Quick Sort](./algorithms/sort/quick-sort.md)
+- [Selection Sort](./algorithms/sort/selection-sort.md)
+
+[Cheat Sheets](./cheatsheets)
