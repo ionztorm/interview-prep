@@ -3,6 +3,15 @@
 
 # Quick Sort
 
+## Quick Facts
+
+- **Type:** Divide and Conquer, Recursive
+- **In-Place:** ✅ Yes (with in-place partitioning)
+- **Time Complexity:**
+  - **Best & Average:** $O(n \log n)$
+  - **Worst:** $O(n^2)$ (Unbalanced partitions)
+- **Space Complexity:** $O(\log n)$ (due to recursion)
+
 ## How It Works
 
 Quick Sort is an efficient **divide-and-conquer** sorting algorithm that organises elements by recursively partitioning the array.

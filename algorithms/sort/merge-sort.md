@@ -3,13 +3,20 @@
 
 # Merge Sort
 
-## How it works
+## Quick Facts
 
-- A divide and conquer recursive sorting algorithm.
-- It recursively divides the list in half until the length is 1
-- All lists of length 1 are considered sorted.
-- Two sorted lists are passed to a merging function which combines the lists into a single sorted list and returns it.
-- This happens recursively until the array is reconstructed in order.
+- **Type:** Divide and Conquer, Recursive
+- **In-Place:** ❌ No (requires additional memory for merging)
+- **Time Complexity:** $O(n \log n)$ (Best, Average, Worst)
+- **Space Complexity:** $O(n)$
+
+## How It Works
+
+- Merge Sort is a **divide-and-conquer** recursive sorting algorithm.
+- It repeatedly **divides the list in half** until each sublist contains only one element.
+- Since a single-element list is inherently sorted, no further splitting is needed.
+- The algorithm then **merges pairs of sorted sublists**, combining them into larger sorted lists.
+- This merging process continues recursively until all sublists are combined into a **fully sorted array**.
 
 ## Pseudocode
 

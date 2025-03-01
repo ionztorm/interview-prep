@@ -3,6 +3,15 @@
 
 # Insertion Sort
 
+## Quick Facts
+
+- **Type:** Comparison-based, Iterative
+- **In-Place:** ✅ Yes
+- **Time Complexity:**
+  - **Best:** $O(n)$ (Nearly Sorted Input)
+  - **Average & Worst:** $O(n^2)$
+- **Space Complexity:** $O(1)$
+
 ## How it works
 
 - **Insertion Sort** is a simple sorting algorithm that builds the sorted list one item at a time.

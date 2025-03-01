@@ -3,12 +3,22 @@
 
 # Bubble Sort
 
-## How it works
+## Quick Facts
 
-- A sorting algorithm
-- Works by looping through a collection and dragging the largest item to the end.
-- The range of the loop decreases on each iteration using a variable decrement.
-- This avoids rechecking the values at the end of the collection already sorted in previous iterations.
+- **Type:** Comparison-based, Iterative
+- **In-Place:** ✅ Yes
+- **Time Complexity:**
+  - **Best:** $O(n)$ (Already Sorted)
+  - **Average & Worst:** $O(n^2)$
+- **Space Complexity:** $O(1)$
+
+## How It Works
+
+- Bubble Sort is a **comparison-based sorting algorithm** that repeatedly swaps adjacent elements if they are in the wrong order.
+- It works by **"bubbling" the largest element to the end** of the array in each full pass.
+- With each iteration, the range of comparison decreases, as the largest elements settle into their correct positions at the end.
+- This optimisation reduces unnecessary comparisons for already sorted elements.
+- The process repeats until the entire array is sorted.
 
 ## Pseudocode
 
