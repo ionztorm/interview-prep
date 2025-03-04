@@ -28,3 +28,7 @@ Help out or follow some other projects:
 - [Selection Sort](./algorithms/sort/selection-sort.md)
 
 [Cheat Sheets](./cheatsheets)
+
+## Data Structures
+
+- [Linked Lists](/data-structures/linked-lists.md)
