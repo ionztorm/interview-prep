@@ -115,7 +115,7 @@ printf("%d\n", *(myArray + 4)); // 5
 
   - `First address + (index * 4)`
 
-- **Pointer arithmetic is powerful but must be used carefully to avoid memory access errors. This can occur if you attempt to access memory beyond the array's bounds, potentially leading to unexpected behavior, crashes, or security vulnerabilities. **
+- **Pointer arithmetic is powerful but must be used carefully to avoid memory access errors. This can occur if you attempt to access memory beyond the array's bounds, potentially leading to unexpected behavior, crashes, or security vulnerabilities.**
 
 ### Updating Array Elements Using Pointers
 
