@@ -31,7 +31,7 @@ Help out or follow some other projects:
 
 - Memory
 - [Pointers](./pointers/pointers.md)
-- Pointers & Arrays
+- [Pointers & Arrays](./pointers/pointers-and-arrays.md)
 
 ## Algorthms
 
