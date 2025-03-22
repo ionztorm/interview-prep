@@ -1,5 +1,7 @@
 # Pointers
 
+> Note: This document discusses topics using `C syntax`.
+
 ## TLDR
 
 1. **What are pointers?**
@@ -20,20 +22,20 @@
 
    - Simple Values:
 
-     - Use \* before a pointer variable to access or modify the value.
-     - Example: \*pValue = 10; — modifies the original value directly.
+     - Use `*` before a pointer variable to access or modify the value.
+     - Example: `*pValue` = 10; — modifies the original value directly.
 
    - Objects:
 
-     - Use the -> operator to automatically dereference and access members of an object.
-     - Example: pObject->member (Equivalent to (\*pObject).member).
+     - Use the `->` operator to automatically dereference and access members of an object.
+     - Example: `pObject->member` (Equivalent to `(*pObject).member`).
 
    - Without dereferencing, you are only working with the address, not the actual value.
 
 4. **Pointer Efficiency**
 
    - Pointers are more efficient than regular values when passed as arguments to functions because they only require passing a memory address instead of copying entire objects.
-   - The size of a pointer is always 4 bytes on a 32-bit system, and 8 bytes on a 64-bit system, regardless of the size of the data being pointed to.
+   - The size of a pointer is always `4 bytes` on a `32-bit` system, and `8 bytes` on a `64-bit` system, regardless of the size of the data being pointed to.
    - This efficiency is especially noticeable when working with large objects or data structures, as only the memory address is passed instead of duplicating the entire data.
 
 ## House Analogy
@@ -60,7 +62,7 @@
    - When we create a house object in code, either as a local or global variable, this object will be stored somewhere in memory.
      - All memory in the computer has an address, from byte 0 to the top.
      - The house object has 3 integer values; `SquareFeet`, `NumBedrooms`, and `NumBathrooms`.
-     - Integers require 4 bytes of memory, meaning the house object needs 12 bytes in total.
+     - `Integers require 4 bytes of memory`, meaning the `house object needs 12 bytes` in total.
      - The compiler finds a place in memory and puts the object there.
      - Typically, we have no idea where this has been stored.
      - Since we don't know the memory address, how do we share the address with other parts of our code (the people)? - a pointer.
@@ -68,7 +70,7 @@
 3. A `pointer` is a _variable that stores, as its value, the memory address of another variable_.
    - It therefore, **points to** that variable and, as such, the type of the pointer must match the type of the variable it points to.
 
-## Syntax (in C)
+## Syntax
 
 ### Defining a Pointer
 
@@ -148,13 +150,13 @@ void DoubleValue(int *pValue) {
 
 ### Pointers and Functions
 
-1. When defining a function, we can have that function accept a standard object, or we can have it accept a pointer.
-2. Accepting a standard object is known as _pass by value_ and creates a copy of the object for use within the function scope.
-3. Accpting a pointer is known as _pass by reference_ and allows the function to access the object directly.
+1. When defining a function, we can have that function accept a standard value or object, or we can have it accept a pointer.
+2. Accepting a standard object is known as `pass by value` and creates a copy of the object for use within the function scope.
+3. Accpting a pointer is known as `pass by reference` and allows the function to access the object directly.
 4. Passing by reference is generally faster:
 
-   - On a 32 bit system, a pointer is only 4 bytes, and on a 64 bit system, a pointer is 8 bytes, so that is all that is required to pass a pointer argument.
-   - Passing by value requires as many bytes as the object itself. In the house example, this would be 12 bytes.
+   - On a `32 bit system, a pointer is only 4 bytes`, and on a `64 bit system, a pointer is 8 bytes`, so that is all that is required to pass a pointer argument.
+   - Passing by value requires as many bytes as the object itself. In the house example, this would be 12 bytes (`3 x 4 bytes`).
    - The difference is more noticeable the larger the object. Imagine an object with more properties; it's the memory required increases, while it does not for a pointer to it.
 
 ```c
