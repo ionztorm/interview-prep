@@ -30,7 +30,7 @@ Help out or follow some other projects:
 ## Memory, Pointers
 
 - Memory
-- [Pointers](./pointers)
+- [Pointers](./pointers/pointers.md)
 - Pointers & Arrays
 
 ## Algorthms
