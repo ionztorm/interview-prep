@@ -11,11 +11,27 @@ Help out or follow some other projects:
 
 ## Coding Basics
 
+- Variables
+- Data Types
+- Operators
+- Control Flows
+- Arrays
+- Objects
+- Sets
+- Maps
+- Functions
+
 ## OOP
 
 - [Classes](./oop/classes.md)
 - [Polymorphism](./oop/polymorphism.md)
 - [Inheritance](./oop/inheritance.md)
+
+## Memory, Pointers
+
+- Memory
+- [Pointers](./pointers)
+- Pointers & Arrays
 
 ## Algorthms
 
@@ -27,8 +43,10 @@ Help out or follow some other projects:
 - [Quick Sort](./algorithms/sort/quick-sort.md)
 - [Selection Sort](./algorithms/sort/selection-sort.md)
 
-[Cheat Sheets](./cheatsheets)
-
 ## Data Structures
 
 - [Linked Lists](/data-structures/linked-lists.md)
+
+## Cheat Sheets
+
+[Cheat Sheets](./cheatsheets)
