@@ -132,3 +132,46 @@ printf("%d\n", *(myArray + 4)); // 5
 
   // myArray is now { 2, 2, 3, 4, 10 }
   ```
+
+## Array Casting
+
+- Because arrays are basically just pointers, and we know that structs are contiguous in memory, we can cast the array of structs to an array of integers:
+
+```c
+int *street_start = (int *)street;
+```
+
+- Then we can iterate over the known number of integers in the array of structs:
+
+```c
+for (int i = 0; i < 9; i++) {
+  printf("street_start[%d] = %d
+", i, street_start[i]);
+}
+```
+
+- This will print out all the `int` values in the array of structs as if they were stored in a single `int` array.
+
+### Handling Mixed Types
+
+- If the structs contain different data types (e.g., `int`, `float`, `char`), casting to an `int*` will not work correctly.
+- Example of a mixed-type struct:
+
+```c
+typedef struct MixedHouse {
+    int SquareFeet;
+    float Price;
+    int NumBedrooms;
+    char Type; // 'A' for Apartment, 'H' for House
+} mixed_house_t;
+
+mixed_house_t street[3] = {
+    { 1000, 250000.0, 3, 'H' },
+    { 900, 200000.0, 2, 'A' },
+    { 1200, 300000.0, 4, 'H' }
+};
+```
+
+- If you try to cast this array to an `int*`, you will get garbage values for the `float` and `char` fields.
+- Attempting to read the data as `int` will not work because of **different sizes and alignments of data types**.
+- **Solution:** You should only use array casting when all struct members are of the same type or when you are sure of the memory layout.
