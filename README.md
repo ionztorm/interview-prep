@@ -2,7 +2,7 @@
 
 I like to write notes, what can I say?
 
-This repo will contain the notes that I write for my interview prep.
+This repo will contain the notes that I wrie for my interview prep.
 
 Help out or follow some other projects:
 
@@ -29,9 +29,11 @@ Help out or follow some other projects:
 
 ## Memory, Pointers
 
-- Memory
+- [Memory](./pointers/memory.md)
 - [Pointers](./pointers/pointers.md)
 - [Pointers & Arrays](./pointers/pointers-and-arrays.md)
+- [Pointers & Multibyte Arrays](./pointers/pointers-and-multibyte-arrays.md)
+- [Pointers & Strings](./pointers/pointers-and-strings.md)
 
 ## Algorthms
 
