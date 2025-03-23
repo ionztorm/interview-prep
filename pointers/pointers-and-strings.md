@@ -20,14 +20,9 @@ char str1[] = "Hello"; // Stored in stack memory, mutable
 
 #### Memory Layout
 
-| Address | Value |
-| ------- | ----- |
-| 0x1000  | H     |
-| 0x1001  | e     |
-| 0x1002  | l     |
-| 0x1003  | l     |
-| 0x1004  | o     |
-| 0x1005  | \0    |
+| 0x1000 | 0x1001 | 0x1002 | 0x1003 | 0x1004 | 0x1005 |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| H      | e      | l      | l      | o      | \0     |
 
 ### Using Pointers
 
@@ -39,14 +34,9 @@ char *str2 = "World"; // Stored in read-only memory, immutable
 
 #### Memory Layout
 
-| Address | Value |
-| ------- | ----- |
-| 0x2000  | W     |
-| 0x2001  | o     |
-| 0x2002  | r     |
-| 0x2003  | l     |
-| 0x2004  | d     |
-| 0x2005  | \0    |
+| 0x2000 | 0x2001 | 0x2002 | 0x2003 | 0x2004 | 0x2005 |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| W      | o      | r      | l      | d      | \0     |
 
 ## Pointer Arithmetic with Strings
 
