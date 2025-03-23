@@ -20,14 +20,14 @@ char str1[] = "Hello"; // Stored in stack memory, mutable
 
 #### Memory Layout
 
-| Address     | Value  |
-|-------------|--------|
-| 0x1000      | H      |
-| 0x1001      | e      |
-| 0x1002      | l      |
-| 0x1003      | l      |
-| 0x1004      | o      |
-| 0x1005      | \0     |
+| Address | Value |
+| ------- | ----- |
+| 0x1000  | H     |
+| 0x1001  | e     |
+| 0x1002  | l     |
+| 0x1003  | l     |
+| 0x1004  | o     |
+| 0x1005  | \0    |
 
 ### Using Pointers
 
@@ -39,14 +39,14 @@ char *str2 = "World"; // Stored in read-only memory, immutable
 
 #### Memory Layout
 
-| Address     | Value  |
-|-------------|--------|
-| 0x2000      | W      |
-| 0x2001      | o      |
-| 0x2002      | r      |
-| 0x2003      | l      |
-| 0x2004      | d      |
-| 0x2005      | \0     |
+| Address | Value |
+| ------- | ----- |
+| 0x2000  | W     |
+| 0x2001  | o     |
+| 0x2002  | r     |
+| 0x2003  | l     |
+| 0x2004  | d     |
+| 0x2005  | \0    |
 
 ## Pointer Arithmetic with Strings
 
@@ -109,8 +109,25 @@ str[0] = 'h'; // Causes a segmentation fault
 
 - Always ensure pointers are properly initialised before dereferencing.
 
-## Summary
+## Example: Creating a string concatenation function.
 
-- Strings are arrays of characters terminated by `\0`.
-- Pointers allow direct manipulation of strings through pointer arithmetic.
-- Avoid modifying string literals; use character arrays if modification is required.
+```c
+void concat_strings(char *str1, const char *str2) {
+    char *last = str1; // avoid mutating str1 incase needed later.
+
+    // iterate over string to find '\0' null terminator.
+    while (*last != '\0') {
+        last++;
+    }
+
+    // copy str2 chars to the end of str1
+    while (*str2 != '\0') {
+        *last = *str2;
+        last++;
+        str2++;
+    }
+
+    // add null terminator to the end
+    *last = '\0';
+}
+```
