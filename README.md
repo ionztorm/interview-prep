@@ -2,7 +2,7 @@
 
 I like to write notes, what can I say?
 
-This repo will contain the notes that I wrie for my interview prep.
+This repo will contain the notes that I write for my interview prep.
 
 Help out or follow some other projects:
 
