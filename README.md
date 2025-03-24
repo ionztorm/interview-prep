@@ -34,6 +34,7 @@ Help out or follow some other projects:
 - [Pointers & Arrays](./pointers/pointers-and-arrays.md)
 - [Pointers & Multibyte Arrays](./pointers/pointers-and-multibyte-arrays.md)
 - [Pointers & Strings](./pointers/pointers-and-strings.md)
+- [Forward Declaration](./pointers/pointers-forward-declaration.md)
 
 ## Algorthms
 
