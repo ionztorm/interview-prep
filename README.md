@@ -30,6 +30,7 @@ Help out or follow some other projects:
 ## Memory, Pointers
 
 - [Memory](./pointers/memory.md)
+- [Stack](./heap-stack/stack.md)
 - [Pointers](./pointers/pointers.md)
 - [Pointers & Arrays](./pointers/pointers-and-arrays.md)
 - [Pointers & Multibyte Arrays](./pointers/pointers-and-multibyte-arrays.md)
