@@ -89,13 +89,7 @@ If the stack starts at memory address `32767` and a function is called, the **St
 
 ---
 
-## How the Stack Grows (Function Calls and Return Addresses)
-
-![Stack Growth](./images/Stack_Growth.png)
-
-- Functions are called in order: `main()` ➔ `bar()` ➔ `foo()` ➔ `baz()`.
-- Each call adds a new frame to the stack, with its **Return Address**.
-- The **lowest address** contains the most recently called function.
+## How the stack works
 
 Let's consider this simple program:
 
@@ -123,7 +117,15 @@ int main() {
 }
 ```
 
-### When the program runs, the stack looks like this (including Return Addresses):
+### How the Stack Grows (Function Calls and Return Addresses)
+
+![Stack Growth](./images/Stack_Growth.png)
+
+- Functions are called in order: `main()` ➔ `bar()` ➔ `foo()` ➔ `baz()`.
+- Each call adds a new frame to the stack, with its **Return Address**.
+- The **lowest address** contains the most recently called function.
+
+When the program runs, the stack looks like this (including Return Addresses):
 
 | Address | Function Call | Variables |
 | ------- | ------------- | --------- |
@@ -142,7 +144,7 @@ int main() {
   - Local variables declared within the function
 - The most recent function call is always at the lowest address (bottom of the table).
 
-### Example of Return Addresses:
+#### Example of Return Addresses:
 
 | Address | Function Call | Variables | Return Address      |
 | ------- | ------------- | --------- | ------------------- |
@@ -156,9 +158,7 @@ int main() {
 - The stack grows downward with each function call.
 - `baz()` (the last function called) is at the **lowest address (`32736`)**.
 
----
-
-## How the Stack Shrinks (Function Returns and Return Addresses)
+### How the Stack Shrinks (Function Returns and Return Addresses)
 
 ![Stack Shrink](./images/Stack_Shrink.png)
 
