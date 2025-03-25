@@ -1,4 +1,4 @@
-# Heap Tutorial for Beginners
+# Memory: Heap
 
 ## What is the Heap?
 

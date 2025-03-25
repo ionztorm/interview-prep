@@ -1,4 +1,4 @@
-# Interview Notes
+# Interview Topics
 
 I like to write notes, what can I say?
 
@@ -27,25 +27,31 @@ Help out or follow some other projects:
 - [Polymorphism](./oop/polymorphism.md)
 - [Inheritance](./oop/inheritance.md)
 
-## Memory, Pointers
+## Memory, Pointers (Using C)
 
-- [Memory](./pointers/memory.md)
-- [Stack](./heap-stack/stack.md)
-- [Pointers](./pointers/pointers.md)
-- [Pointers & Arrays](./pointers/pointers-and-arrays.md)
-- [Pointers & Multibyte Arrays](./pointers/pointers-and-multibyte-arrays.md)
-- [Pointers & Strings](./pointers/pointers-and-strings.md)
-- [Forward Declaration](./pointers/pointers-forward-declaration.md)
+- **Memory**
+
+  - [Memory Basics](./pointers/memory.md)
+  - [Stack](./heap-stack/stack.md)
+  - [Heap](./heap-stack/heap.md)
+
+- **Pointers**
+
+  - [Pointers](./pointers/pointers.md)
+  - [Pointers & Arrays](./pointers/pointers-and-arrays.md)
+  - [Pointers & Multibyte Arrays](./pointers/pointers-and-multibyte-arrays.md)
+  - [Pointers & Strings](./pointers/pointers-and-strings.md)
+  - [Forward Declaration](./pointers/pointers-forward-declaration.md)
 
 ## Algorthms
 
-### Sorting
+- **Sorting**
 
-- [Bubble Sort](./algorithms/sort/bubble-sort.md)
-- [Insertion Sort](./algorithms/sort/insertion-sort.md)
-- [Merge Sort](./algorithms/sort/merge-sort.md)
-- [Quick Sort](./algorithms/sort/quick-sort.md)
-- [Selection Sort](./algorithms/sort/selection-sort.md)
+  - [Bubble Sort](./algorithms/sort/bubble-sort.md)
+  - [Insertion Sort](./algorithms/sort/insertion-sort.md)
+  - [Merge Sort](./algorithms/sort/merge-sort.md)
+  - [Quick Sort](./algorithms/sort/quick-sort.md)
+  - [Selection Sort](./algorithms/sort/selection-sort.md)
 
 ## Data Structures
 
