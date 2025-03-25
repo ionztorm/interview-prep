@@ -9,7 +9,18 @@
 
 ---
 
-## What is a Call Stack?
+## How the OS Assigns Memory
+
+When a program is loaded into memory by the Operating System (OS), the OS assigns specific regions of memory to different parts of the program. These include:
+
+- **Text Segment**: Where the compiled code (instructions) resides.
+- **Data Segment**: Where global and static variables are stored.
+- **Heap**: Used for dynamic memory allocation (e.g., `malloc()` in C).
+- **Call Stack**: Used for managing function calls and local variables.
+
+---
+
+## What is the Call Stack?
 
 A **call stack** is a special region of memory that stores information about the active functions in a program.
 
@@ -18,50 +29,6 @@ A **call stack** is a special region of memory that stores information about the
 - When a function returns, its stack frame is removed (popped) from the stack.
 
 > **Note:** The stack is only used for storing functions and variables where the size is already known at compile-time. Dynamically allocated memory (such as memory created with `malloc()` in C) is stored on the **Heap**, not the stack.
-
----
-
-## Stack Pointer
-
-The **Stack Pointer (SP)** is a special register that keeps track of the **top of the stack**. It always points to the **start of the most recent stack frame**, which is the **lowest memory address of that frame**. This is because the stack grows **downward** in memory.
-
-### Why It Points to the Start of the Frame:
-
-- Memory grows downward from high addresses to low addresses.
-- When a new function is called, the **SP is moved downward to the lowest available address**.
-- The start of the stack frame is the lowest memory address within that frame, making it the **first address to be written to when a function is called**.
-- The Stack Pointer makes it easy to **allocate and free memory** by simply moving up or down.
-
-The **Stack Pointer (SP)** is a special register that keeps track of the **top of the stack**. It always points to the **start of the most recent stack frame**, which is the **lowest memory address of that frame**.
-
-### How the Stack Pointer Works:
-
-- When a new function is called, the **Stack Pointer** is **decremented** (moved to a lower memory address) to allocate space for the new stack frame.
-- When a function returns, the **Stack Pointer** is **incremented** (moved to a higher memory address) to free the space occupied by the frame.
-- This ensures the stack grows and shrinks dynamically as functions are called and returned.
-
-**Example**:
-
-![Stack Pointer Movement](./images/Stack_Pointer_Movement.png)
-
-- The **SP moves downward** as new function calls are made.
-- The **SP moves upward** as functions return.
-- This mechanism ensures the stack dynamically grows and shrinks as needed.
-
-If the stack starts at memory address `32767` and a function is called, the **Stack Pointer** moves down to, say, `32763`. When that function returns, the **Stack Pointer** moves back up to `32767`.
-
----
-
-## How the OS Assigns Memory for the Stack
-
-When a program is loaded into memory by the Operating System (OS), the OS assigns specific regions of memory to different parts of the program. These include:
-
-- **Text Segment**: Where the compiled code (instructions) resides.
-- **Data Segment**: Where global and static variables are stored.
-- **Heap**: Used for dynamic memory allocation (e.g., `malloc()` in C).
-- **Stack**: Used for managing function calls and local variables.
-
----
 
 ### Stack Allocation
 
@@ -90,6 +57,35 @@ When a program is loaded into memory by the Operating System (OS), the OS assign
 - The **Heap** grows upward from mid-range addresses (20000 - 29999).
 - The **Data** segment stores global/static variables (10000 - 19999).
 - The **Text** segment holds the compiled code (instructions) at the lowest address (9999).
+
+---
+
+## Stack Pointer
+
+The **Stack Pointer (SP)** is a special register that keeps track of the **top of the stack**. It always points to the **start of the most recent stack frame**, which is the **lowest memory address of that frame**. This is because the stack grows **downward** in memory.
+
+### Why It Points to the Start of the Frame:
+
+- Memory grows downward from high addresses to low addresses.
+- When a new function is called, the **SP is moved downward to the lowest available address**.
+- The start of the stack frame is the lowest memory address within that frame, making it the **first address to be written to when a function is called**.
+- The Stack Pointer makes it easy to **allocate and free memory** by simply moving up or down.
+
+### How the Stack Pointer Works:
+
+- When a new function is called, the **Stack Pointer** is **decremented** (moved to a lower memory address) to allocate space for the new stack frame.
+- When a function returns, the **Stack Pointer** is **incremented** (moved to a higher memory address) to free the space occupied by the frame.
+- This ensures the stack grows and shrinks dynamically as functions are called and returned.
+
+**Example**:
+
+![Stack Pointer Movement](./images/Stack_Pointer_Movement.png)
+
+- The **SP moves downward** as new function calls are made.
+- The **SP moves upward** as functions return.
+- This mechanism ensures the stack dynamically grows and shrinks as needed.
+
+If the stack starts at memory address `32767` and a function is called, the **Stack Pointer** moves down to, say, `32763`. When that function returns, the **Stack Pointer** moves back up to `32767`.
 
 ---
 
