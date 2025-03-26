@@ -34,6 +34,7 @@ Help out or follow some other projects:
   - [Memory Basics](./pointers/memory.md)
   - [Stack](./heap-stack/stack.md)
   - [Heap](./heap-stack/heap.md)
+  - [Endianness](./heap-stack/endianness.md)
 
 - **Pointers**
 
@@ -42,6 +43,9 @@ Help out or follow some other projects:
   - [Pointers & Multibyte Arrays](./pointers/pointers-and-multibyte-arrays.md)
   - [Pointers & Strings](./pointers/pointers-and-strings.md)
   - [Forward Declaration](./pointers/pointers-forward-declaration.md)
+  - Pointers to Pointers
+  - Array of Pointers
+  - Void Pointers
 
 ## Algorthms
 
