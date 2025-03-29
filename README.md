@@ -7,7 +7,7 @@ This repo will contain the notes that I wrie for my interview prep.
 Help out or follow some other projects:
 
 - [Follow on Bluesky](https://bsky.app/profile/leonlonsdale.dev)
-- [Join Discord](https://discord.gg/dhrdFh98UA)
+- [Join Discord](https://discord.gg/wqEAcvftJb)
 
 ## Coding Basics
 
